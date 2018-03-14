@@ -459,7 +459,8 @@ function OpenPoliceActionsMenu()
               {label = _U('drag'),      value = 'drag'},
               {label = _U('put_in_vehicle'),  value = 'put_in_vehicle'},
               {label = _U('out_the_vehicle'), value = 'out_the_vehicle'},
-              {label = _U('fine'),            value = 'fine'}
+              {label = _U('fine'),            value = 'fine'},
+			        {label = _U('Se tillstånden'),            value = 'license_see'}           
             },
           },
           function(data2, menu2)
@@ -496,6 +497,10 @@ function OpenPoliceActionsMenu()
                 OpenFineMenu(player)
               end
 
+ 			       if data2.current.value == 'license_see' then
+                  TriggerServerEvent('esx_policejob:license_see', GetPlayerServerId(player))
+              end             
+              
             else
               ESX.ShowNotification(_U('no_players_nearby'))
             end

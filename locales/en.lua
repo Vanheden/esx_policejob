@@ -36,6 +36,7 @@ Locales['en'] = {
   ['put_in_vehicle'] = 'put in Vehicle',
   ['out_the_vehicle'] = 'take out of vehicle',
   ['fine'] = 'fine',
+  ['license_see'] = 'license',
   ['no_players_nearby'] = 'no players nearby',
 
   ['vehicle_info'] = 'vehicle Info',
